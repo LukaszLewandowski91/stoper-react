@@ -10,10 +10,9 @@ const FormattedTime = ({ time }) => {
     minutes = minutes % 60;
     hours = hours % 24;
 
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    return `${hours}:${minutes}:${seconds}.${mili}`;
+    return `${hours.toString().padStart(2, "0")}:${minutes
+      .toString()
+      .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${mili}`;
   };
 
   return (

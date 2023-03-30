@@ -1,6 +1,6 @@
 import styles from "./Timer.module.scss";
 import { useEffect, useState } from "react";
-import FormattedTime from "../FormatTime/FormattedTime";
+import FormattedTime from "../FormattedTime/FormattedTime";
 
 const Timer = (props) => {
   const [time, setTime] = useState(0);
